@@ -32,6 +32,12 @@
   .navbar{
     background-color: $main-color;
     width: 100%;
+    box-shadow: 0px 0px 5px 0px black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
   }
 
   .header{
