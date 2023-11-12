@@ -1,16 +1,24 @@
 <script>
-export default{
- data() {
-  return {
+
+import NavBar from './components/NavBar.vue';
+
+
+export default {
+  components: {
+    NavBar,
+  },
+  data() {
+    return {
+    }
   }
- },
 }
+
 </script>
 
 <template>
-  
+  <NavBar/>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+@use './styles/general.scss';
 </style>
