@@ -5,7 +5,7 @@
         <div class="col page-footer__info">
           <h3>Boolando S.r.l.</h3>
           <ul class="footer-info">
-            <li v-for="(info, index) in infos">{{ info }}</li>
+            <li v-for="(info, index) in infos"><a href="#">{{ info }}</a></li>
           </ul>
         </div>
         <div class="col page-footer__social">
