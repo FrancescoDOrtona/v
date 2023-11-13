@@ -2,9 +2,9 @@
     <div class="card" v-for="(product,index) in products" :key="product.id">
         <img :src="product.frontImage" alt="">
         <div class="card-info">
-            <h3>{{ product.brand }}</h3>
-            <p>{{ product.name }}</p>
-            <small>{{ product.price }}</small>
+            <p>{{ product.brand }}</p>
+            <h3>{{ product.name }}</h3>
+            <small class="price">{{ product.price }}</small>
             <img src="" alt="">
         </div>
     </div>
@@ -125,9 +125,16 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 .card-info{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.price{
+    color: $price-color;
+    font-weight: bold;
 }
 </style>
