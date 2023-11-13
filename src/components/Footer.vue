@@ -1,14 +1,14 @@
 <template>
   <footer class="page-footer">
     <div class="container">
-      <div class="row">
+      <div class="row footer-content">
         <div class="col page-footer__info">
           <h3>Boolando S.r.l.</h3>
           <ul class="footer-info">
             <li v-for="(info, index) in infos">{{ info }}</li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col page-footer__social">
           <h3>Trovaci anche su:</h3>
           <ul class="page-footer__icons">
             <li v-for="(social, index) in socials">
@@ -38,13 +38,26 @@ export default {
 .page-footer{
   background-color: $footer-color;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-content{
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
 .footer-info{
   display: flex;
   gap: 15px;
+  font-size: $font-size-sm;
 }
 
 .page-footer__info{
@@ -53,6 +66,15 @@ export default {
   align-items: start;
 }
 
+.page-footer__social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3{
+  font-size: $font-size-md;
+}
 .page-footer__icons{
   display: flex;
   gap: 10px;
