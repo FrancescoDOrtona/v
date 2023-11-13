@@ -38,10 +38,6 @@ export default {
 .page-footer{
   background-color: $footer-color;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .container{
@@ -50,7 +46,7 @@ export default {
 }
 
 .footer-content{
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 20px;
 }
 
