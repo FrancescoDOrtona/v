@@ -42,7 +42,7 @@
 
   .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 15px;
   }
@@ -53,6 +53,7 @@
 
   .logo{
     width: 150px;
+    justify-content: center;
   }
 
   .icons{
